@@ -1,3 +1,11 @@
+<%-- 
+    Document   : home
+    Created on : Jun 6, 2023, 8:48:09 AM
+    Author     : quynh
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +15,7 @@
     <title>Coffee Laklu</title>
     <link rel="icon" href="Images/img_coffeelaklu/11zon_cropped.png" type="img/png" >
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="Views/Css/style.css">
+    <link rel="stylesheet" type="text/css" href="../Css/style.css">
    
 </head>
 
@@ -15,23 +23,23 @@
 
     <div class="header">
         <div>
-            <img class="logo" src="Images/img_coffeelaklu/logo1.jpg">
+            <img class="logo" src="../../Images/img_coffeelaklu/logo1.jpg">
         </div>
         <div class="list">
             <ul class="confix">
-                <li><a href="Views/JSP/menu.jsp">Menu</a></li>
-                <li><a href="Views/JSP/tichdiem.jsp">Tích điểm</a></li>
-                <li><a href="Views/JSP/giohang.jsp">Giỏ hàng</a></li>
-                <li><a href="Views/JSP/cuahang.jsp">Cửa hàng</a></li>
-                <li><a href="Views/JSP/blog.jsp">Blog</a></li>
-                <li ><a href="Views/JSP/login.jsp">Login</a></li>
+                <li><a href="menu.jsp">Menu</a></li>
+                <li><a href="tichdiem.jsp">Tích điểm</a></li>
+                <li><a href="giohang.jsp">Giỏ hàng</a></li>
+                <li><a href="cuahang.jsp">Cửa hàng</a></li>
+                <li><a href="blog.jsp">Blog</a></li>
+                <li ><a href="login.jsp">Login</a></li>
             </ul>
         </div>
     </div>
 <!-- END header -->
    
     <div class="slideshow">
-        <img src="Images/img_coffeelaklu/menu2.jpg">
+        <img src="../../Images/img_coffeelaklu/menu2.jpg">
     </div>
 
     
@@ -39,9 +47,9 @@
         <h1>COFFEE LAKLU</h1>
     </div>
     <div class="confix1">
-        <img src="Images/img_coffeelaklu/chill.jpg">
-        <img src="Images/img_coffeelaklu/Ellipse 879 (1).jpg">
-        <img src="Images/img_coffeelaklu/nhanvien.jpg">
+        <img src="../../Images/img_coffeelaklu/chill.jpg">
+        <img src="../../Images/img_coffeelaklu/Ellipse 879 (1).jpg">
+        <img src="../../Images/img_coffeelaklu/nhanvien.jpg">
     </div>
     <div id="text1">
         <p>

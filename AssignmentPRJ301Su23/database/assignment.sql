@@ -3,5 +3,47 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
+CREATE TABLE Users (
+    UserID INT IDENTITY(1,1) PRIMARY KEY,
+    Username VARCHAR(50) NOT NULL,
+    Password VARCHAR(50) NOT NULL,
+    FullName NVARCHAR(50) NOT NULL,
+    Email VARCHAR(50) NOT NULL,
+    PhoneNumber VARCHAR(20) NOT NULL,
+    Address VARCHAR(200) NOT NULL
+);
 
-CREATE TABLE 
+CREATE TABLE Products (
+    ProductID INT IDENTITY(1,1) PRIMARY KEY,
+    Name VARCHAR(100) NOT NULL,
+    Price FLOAT NOT NULL
+);
+
+CREATE TABLE Product_Detail (
+    ProductDetailID INT PRIMARY KEY,
+    ProductID INT,
+	ImageData VARBINARY(MAX),
+	Description NVARCHAR(500),
+    FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
+);
+
+CREATE TABLE Cart (
+    CartID INT IDENTITY(1,1) PRIMARY KEY,
+    UserID INT,
+    ProductDetailID INT,
+    Quantity INT NOT NULL,
+    FOREIGN KEY (UserID) REFERENCES Users(UserID),
+    FOREIGN KEY (ProductDetailID) REFERENCES Product_Detail(ProductDetailID)
+);
+CREATE TABLE LoyaltyPoints (
+    UserID  INT IDENTITY(1,1) PRIMARY KEY,
+    Points INT NOT NULL,
+    FOREIGN KEY (UserID) REFERENCES Users(UserID)
+);
+CREATE TABLE Orders (
+    OrderID INT IDENTITY(1,1) PRIMARY KEY,
+    UserID INT,
+    TotalAmount DECIMAL(10, 2) NOT NULL,
+    OrderDate DATETIME NOT NULL,
+    FOREIGN KEY (UserID) REFERENCES Users(UserID)
+);

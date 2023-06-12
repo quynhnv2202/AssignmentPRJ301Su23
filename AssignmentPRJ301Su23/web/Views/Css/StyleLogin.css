@@ -1,0 +1,139 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jun 7, 2023, 9:49:15 AM
+    Author     : quynh
+*/
+body{
+    overflow-x: hidden;
+    background-color: rgb(163, 149, 149);
+
+}
+.header_login{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color: #c49b63;
+    margin-bottom: 50px;
+}
+.header_login img{
+    height: 100px;
+    border-radius:50% ;
+    margin: 5px; 
+}
+#home_login a{
+    text-decoration: none;
+    color: inherit;
+}
+#home_login a:hover{
+   color: rgb(165, 70, 70);
+}
+.customer_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 960px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+  
+  .col-lg-6,
+  .col-md-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+    padding: 0 15px;
+  }
+  
+  .account_form {
+    background-color: #f9f9f9;
+    padding: 30px;
+    margin-top: 60px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .account_form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  .account_form form {
+    margin-bottom: 0;
+  }
+  
+  .account_form p {
+    margin-bottom: 15px;
+  }
+  
+  .account_form label {
+    font-weight: 600;
+  }
+  
+  .account_form input[type="text"],
+  .account_form input[type="email"],
+  .account_form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .account_form .login_submit {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .account_form .login_submit a {
+    text-decoration: none;
+    color: #999;
+    font-size: 14px;
+  }
+  
+  .account_form .login_submit label {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #999;
+  }
+  
+  .account_form .login_submit button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .account_form .login_submit button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  .footer {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    background-color:  #c49b63;
+}
+  
+
